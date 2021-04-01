@@ -1,8 +1,10 @@
 import express from 'express'
-import "reflect-metadata";
-import * as dotenv from "dotenv";
+import dotenv from "dotenv";
 import morgan from 'morgan'
 import bodyparser from 'body-parser'
+import passport from 'passport'
+import cookieSession from 'cookie-session'
+dotenv.config({ path: 'config.env' });
 
 
 dotenv.config({ path: 'config.env' });
